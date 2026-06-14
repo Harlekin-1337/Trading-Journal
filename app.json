@@ -1,0 +1,38 @@
+{
+  "expo": {
+    "name": "Trading Journal",
+    "slug": "trading-journal",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0A0E1A"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.tradingjournal.app",
+      "infoPlist": {
+        "NSPhotoLibraryUsageDescription": "Allow Trading Journal to access your photos to attach chart screenshots to trades.",
+        "NSCameraUsageDescription": "Allow Trading Journal to use the camera to capture chart screenshots."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#0A0E1A"
+      }
+    },
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Allow Trading Journal to access your photos.",
+          "cameraPermission": "Allow Trading Journal to use the camera."
+        }
+      ]
+    ]
+  }
+}
